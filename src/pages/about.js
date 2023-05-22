@@ -9,8 +9,9 @@ export default function About() {
   if (isError) return <div>Error</div>
 
   return (
-    <div>
-      <h1>About {network.name}</h1>
+    <div className={styles.detailcard}>
+      <h1 className={styles.kilometer}>About {network.name}</h1>
+      <p></p>
     </div>
   )
 }

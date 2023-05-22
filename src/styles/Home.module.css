@@ -60,6 +60,16 @@
   background-color: #2a374f;
 }
 
+.noBikes {
+  color: red;
+  border: 1px solid red;
+}
+
+.allBikes {
+  color: orange;
+  border: 1px solid orange;
+}
+
 .detailcard{
   margin: 2em;
   color: #80AAF8;
@@ -78,6 +88,7 @@
 }
 
 .kilometer{
+  font-family: "octin-college", sans-serif;
   color: white;
   font-weight: 800;
   font-size: 32px;
@@ -93,4 +104,7 @@
   right: 10px;
   top: 10px;
 }
-
+.imagestyle{
+  margin-top: 2em;
+  border-radius: 1em;
+}
