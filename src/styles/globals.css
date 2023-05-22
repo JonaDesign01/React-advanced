@@ -87,7 +87,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
+  background: #1C2535;
 }
 
 a {

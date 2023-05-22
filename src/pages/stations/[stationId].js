@@ -1,3 +1,4 @@
+import styles from '@/styles/Home.module.css'
 import useNetwork from '@/data/network';
 import { useRouter } from 'next/router'
 
@@ -11,10 +12,12 @@ export default function Home() {
   const station = network.stations.find(station => station.id === router.query.stationId)
 
   return (
-    <div>
-      <h1>{station.name}</h1>
-      <p>Available bikes: {station.free_bikes}</p>
-      <p>Empty slots: {station.empty_slots}</p>
+    <div className={styles.detailcard}>
+      <h1 className={styles.name} >{station.name}</h1>
+      <div className={styles.detailinfo}>
+       <p>Available bikes: {station.free_bikes}</p>
+       <p>Empty slots: {station.empty_slots}</p>
+      </div>
     </div>
   )
 }
